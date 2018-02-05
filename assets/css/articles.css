@@ -1,0 +1,282 @@
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.landing-header {
+  background-image: url(../img/hero-curve2.svg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  /* height: 59vh; */
+  color: #fff;
+}
+
+  .landing-title {
+    margin-top: 5rem;
+    color: #fff;
+  }
+
+  .landing-title h2 {
+    font-size: calc(120% + 4 * (100vw - 600px) / 400);
+    color: #f3f3f3;
+    line-height: 1;
+    padding-top: 3rem;
+  }
+
+  .landing-title h3 {
+    color: #fff;
+    font-size: calc(200% + 4 * (100vw - 600px) / 400);
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 80rem;
+    padding-top: 2rem;
+  }
+
+  .landing-title h4 {
+    color: #f1dad0;
+    font-size: 1.8rem;
+    padding-top: 4rem;
+  }
+
+
+
+/*------------------------------------*\
+  #NAVIGATION
+\*------------------------------------*/
+
+.navbar-toggler {
+  background-color: #fff;
+  border: none;
+}
+
+  .navbar-light .navbar-toggler {
+    background-color: #fff;
+    border: none;
+  }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 300;
+}
+
+  @media (min-width: 700px) and (max-width: 769px){
+    .navbar img {
+      width: 15rem;
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link:active,
+  .navbar-light .navbar-nav .nav-link:link,
+  .navbar-light .navbar-nav .nav-link:visited {
+    color: #fff;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #FCB22E;
+  }
+
+  @media (max-width: 700px) {
+    .navbar img {
+      width: 15rem;
+    }
+  }
+
+
+
+  .arrowDown {
+    /* margin-top: 7rem; */
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    transform: rotate(90deg);
+  }
+
+    .arrowDown:hover {
+      color: #FCB22E;
+    }
+
+    @media (max-width: 700px) {
+      .arrowDown {
+        margin-top: 5rem;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 1400px) {
+      .arrowDown {
+        margin-top: 10rem;
+      }
+    }
+
+    @media (min-width: 960px) and (max-width: 2400px) {
+      .arrowDown {
+        margin-top: 11rem;
+      }
+    }
+
+/*------------------------------------*\
+  #ARTICLE
+\*------------------------------------*/
+
+article {
+  color: #1e1e1e;
+  font-weight: 300;
+  max-width: 73rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  line-height: 1.5;
+}
+
+  article header {
+    color: #ff6430;
+    margin-top: 6rem;
+    margin-bottom: 1.9rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  article header h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  article header h3 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  article p,
+  article li {
+    font-size: 1.8rem;
+  }
+
+
+
+/*------------------------------------*\
+  #AUTHOR BOX
+\*------------------------------------*/
+
+.author-text {
+  background-color: #f6f6f6;
+  padding: 3rem 3.2rem 1.8rem 3.2rem;
+  margin-bottom: 2rem;
+}
+
+  .author-text em {
+    font-weight: 400;
+  }
+
+
+
+/*------------------------------------*\
+  #BLOCKQUOTE
+\*------------------------------------*/
+
+.blockquote {
+  margin: 2.2rem 2.2rem;
+  margin-left: 1.5rem;
+}
+
+.marker-line {
+  border-left: .6rem solid #ff6430;
+}
+
+
+
+/*------------------------------------*\
+  #LIST
+\*------------------------------------*/
+
+.list-group .list-group-item:hover {
+  color: #fff;
+  background-color: #ff6430;
+}
+
+
+
+/*------------------------------------*\
+  #FIGURE
+\*------------------------------------*/
+
+.figure-caption {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ff6430;
+  line-height: 1.4;
+}
+
+
+/*------------------------------------*\
+  #IMAGES
+\*------------------------------------*/
+
+.img-fluid {
+  margin: 2rem 0 3.1rem 0;
+  width: 73rem;
+  max-height: 60rem;
+}
+
+
+/*------------------------------------*\
+  #TABLES
+\*------------------------------------*/
+table thead {
+  background-color: #1AA9B2;
+  color: #fff;
+}
+
+  table th {
+    font-weight: 300;
+  }
+
+  table tr, table td {
+    font-size: 1.6rem;
+  }
+
+
+
+/*------------------------------------*\
+  #BACK-TO-TOP-BUTTON
+\*------------------------------------*/
+
+.arrowUp {
+  margin: 5rem 5rem;
+}
+
+  .arrowUp a {
+    padding: 1.4rem 1.2rem;
+  }
+
+
+
+/*------------------------------------*\
+  #BIBLIOGRAPHY
+\*------------------------------------*/
+
+.bibliography {
+  background-color: #f6f6f6;
+  font-size: 1.6rem;
+  padding: 2rem;
+  margin: 7rem 2rem;
+}
+
+  .bibliography header h2 {
+    color: #ff6430;
+    font-size: 2.5rem;
+    margin: 2rem 2rem;
+  }
+
+  .bibliography a {
+    color: #ff6430;
+    word-wrap: break-word;
+  }
+
+    .bibliography a:hover {
+      color: #fff;
+      background-color: #ff6430;
+      padding: .3rem 0;
+    }
+
+sup a {
+  color: #ff6430;
+}

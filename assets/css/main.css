@@ -1,0 +1,457 @@
+/*------------------------------------*\
+  #FONTS
+\*------------------------------------*/
+
+@font-face {
+  font-family: 'Guillon';
+  src: url('../fonts/Guillon-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Guillon-Regular.otf')  format('opentype'),
+	     url('../fonts/Guillon-Regular.woff') format('woff'), url('../fonts/Guillon-Regular.ttf')  format('truetype'), url('../fonts/Guillon-Regular.svg#Guillon-Regular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Guillon';
+  src: url('../fonts/Guillon-Demi.eot?#iefix') format('embedded-opentype'),  url('../fonts/Guillon-Demi.otf')  format('opentype'),
+	     url('../fonts/Guillon-Demi.woff') format('woff'), url('../fonts/Guillon-Demi.ttf')  format('truetype'), url('../fonts/Guillon-Demi.svg#Guillon-Demi') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Guillon';
+  src: url('../fonts/Guillon-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Guillon-Bold.otf')  format('opentype'),
+	     url('../fonts/Guillon-Bold.woff') format('woff'), url('../fonts/Guillon-Bold.ttf')  format('truetype'), url('../fonts/Guillon-Bold.svg#Guillon-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+/*------------------------------------*\
+  #GLOBAL
+\*------------------------------------*/
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  color: #1e1e1e;
+  font-family:'Guillon',sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+/*------------------------------------*\
+  #NAVIGATION
+\*------------------------------------*/
+
+.magazine-number img {
+  width: 10rem;
+}
+
+  @media (max-width: 700px) {
+    .page-logo img {
+      width: 15rem;
+    }
+
+    .magazine-number img {
+      width: 5rem;
+    }
+  }
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.page-header {
+  background-image: url(../img/hero-curve.svg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+
+  @media (min-width: 960px) and (max-width: 1270px) {
+    .page-header {
+      height: 65vh;
+    }
+  }
+
+.page-background {
+  background-image: url(../img/background.svg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  height: 87vh;
+}
+
+
+
+/*------------------------------------*\
+  #HEADER-TEXT
+\*------------------------------------*/
+
+.page-title {
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
+  .page-title h1 {
+    font-size: calc(250% + 4 * (100vw - 600px) / 400);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    animation-name: moveInLeft;
+    animation-duration: 2.5s;
+  	animation-iteration-count: 1;
+  }
+
+  .page-title h2 {
+    font-size: calc(110% + 4 * (100vw - 600px) / 400);
+    line-height: 1;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: all .3s;
+
+    animation-name: moveInRight;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+  }
+
+    .page-title h2:hover {
+      color: #FCB22E;
+      font-weight: 700;
+      transform: translateX(.5rem);
+      transition-duration: .3s;
+    }
+
+    @keyframes moveInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+
+      80% {
+        transform: translateX(5px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    80% {
+      transform: translateX(-5px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .page-title {
+      margin-top: 5rem;
+      margin-left: 3.3rem;
+    }
+
+    .page-title h1 {
+      font-size: calc(230% + 4 * (100vw - 600px) / 400);
+      line-height: 1;
+    }
+
+    .page-title h2 {
+      font-size: calc(120% + 4 * (100vw - 600px) / 400);
+      line-height: 1;
+    }
+  }
+
+  .page-title a {
+    color: #fff;
+  }
+
+
+
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.arrowDown {
+  /* margin-top: 7rem; */
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+  .arrowDown:hover {
+    color: #FCB22E;
+  }
+
+  @media (max-width: 700px) {
+    .arrowDown {
+      margin-top: 5rem;
+    }
+  }
+
+  @media (min-width: 800px) and (max-width: 1400px) {
+    .arrowDown {
+      margin-top: 10rem;
+    }
+  }
+
+  @media (min-width: 960px) and (max-width: 2400px) {
+    .arrowDown {
+      margin-top: 11rem;
+    }
+  }
+
+
+.btn,
+.btn:link,
+.btn:visited,
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #fff;
+  color: #FB7600;
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  padding: .5rem 2rem;
+}
+
+.btn {
+  float: right;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+  transition: all .4s;
+}
+
+.btn:hover {
+  background-color: #FF6430;
+  border: .2rem solid #fff;
+  color: #fff;
+}
+
+
+/*------------------------------------*\
+  #CARDS
+\*------------------------------------*/
+
+main {
+  margin-top: 5rem;
+}
+
+  @media (max-width: 700px) {
+    main {
+      margin-top: 3.5rem;
+    }
+  }
+
+.card {
+  margin-top: 2.5rem;
+  height: 38rem;
+  background-color: #FB7600;
+  border: none;
+  transition: all .4s;
+}
+
+  @media (max-width: 700px) {
+    .card {
+      height: 33rem;
+    }
+  }
+
+  @media (min-width: 700px) and (max-width: 990px) {
+    .card {
+      height: 36rem;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1201px) {
+    .card {
+      height: 46rem;
+    }
+  }
+
+  .card:hover {
+    border: none;
+    box-shadow: .5rem .5rem rgba(0, 0, 0, 0.1);
+    background-color: #FF6430;
+    transform: translateY(-.7rem);
+    transition-duration: .3s;
+  }
+
+  .card:hover .card-category {
+    color: #FCB22E;
+    font-weight: 400;
+  }
+
+  .card-body {
+    margin-left: 1rem;
+  }
+
+
+.card-category,
+.card-author {
+  color: #f3f3f3;
+}
+
+.card-category {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.card-number {
+  color: #F29D7C;
+  float: right;
+  font-size: 9rem;
+  font-weight: 400;
+  margin-top: -4rem;
+}
+
+.card-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 5rem;
+  text-transform: uppercase;
+}
+
+.card-author {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+
+  @media (max-width: 700px) {
+    .card-category {
+      font-size: 1.2rem;
+    }
+
+    .card-number {
+      font-size: 7rem;
+    }
+
+    .card-title {
+      font-size: 1.6rem;
+      margin-top: 4rem;
+    }
+
+    .card-author {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (min-width: 700px) and (max-width: 990px) {
+    .card-category {
+      font-size: 1.4rem;
+    }
+
+    .card-number {
+      font-size: 8rem;
+    }
+
+    .card-title {
+      font-size: 2.1rem;
+      margin-top: 6rem;
+    }
+
+    .card-author {
+      font-size: 1.4rem;
+    }
+  }
+
+
+  @media (min-width: 992px) and (max-width: 1201px) {
+    .card-category {
+      font-size: 1.4rem;
+    }
+
+    .card-number {
+      font-size: 9rem;
+    }
+
+    .card-title {
+      font-size: 1.9rem;
+      margin-top: 6rem;
+    }
+
+    .card-author {
+      font-size: 1.3rem;
+    }
+  }
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.page-footer {
+  color: #fff;
+  background-color: #1e1e1e;
+  font-size: 1.4rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+  .footer-right span {
+    color: #FB7600;
+    font-size: 1.1rem;
+  }
+
+  .footer-left,
+  .footer-right {
+    margin-bottom: 5rem;
+  }
+
+    @media (max-width: 991px) {
+      .footer-left {
+        margin-bottom: -3rem;
+      }
+    }
+
+.footer-heading {
+  color: #FB7600;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 5rem;
+}
+
+.footer-link {
+  color: #FF6430;
+  padding: .3rem 0 .3rem 0;
+  word-wrap: break-word;
+}
+
+.footer-link:hover {
+  color: #fff;
+  background-color: #FF6430;
+}
